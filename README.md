@@ -4,8 +4,7 @@ A simple **URL Shortener Web App** built using **Flask (Python), HTML/CSS, and S
 It generates unique short links for long URLs, stores them in a database, and handles redirection seamlessly.
 
 ## 🚀 Features
-- Shorten long URLs into clean, shareable links.
-- Redirect to original URLs when short link is visited.  
+- Shorten long URLs into clean, redirectable links.  
 - Minimal and responsive UI (Bootstrap/HTML/CSS).
 
 
@@ -52,6 +51,10 @@ http://127.0.0.1:5000/
 
 
 ## 📸 Screenshots
+![Uploading the long URL](python_projects/images/upload_url.png)
+
+![Shortened redirectable URL](python_projects/images/short_url.png)
+
 
 
 
