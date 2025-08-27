@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener - Success</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        .text-left {
+            text-align: left;
+            cursor: pointer;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 22px;
+            background-color: rgb(207, 233, 250);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        body {
+            background: linear-gradient(135deg, #e3f6fc 0%, #f7fbfc 100%);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25313.png" alt="Logo">
+                <span class="fw-bold fs-4">URL Shortener</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="text-left">
+            <strong>Original URL:</strong> {{ original_url }} <br><br>
+            <strong>Shortened URL:</strong>
+            <a href="{{ url_for('main.redirect_short_url', short_url=new_url, _external=True) }}" target="_blank">
+                {{ url_for('main.redirect_short_url', short_url=new_url, _external=True) }}
+            </a>
+        </div>
+    </div>
+</body>
