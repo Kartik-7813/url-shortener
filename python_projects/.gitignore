@@ -1,0 +1,16 @@
+# Python-specific files to ignore
+__pycache__/
+*.pyc
+
+# Virtual environment directory
+.venv/
+
+# Flask-specific files
+instance/
+.flaskenv
+
+# IDE and editor files
+.vscode/
+
+# Environment variables
+.env
