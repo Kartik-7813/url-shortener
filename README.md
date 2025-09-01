@@ -3,21 +3,17 @@
 A simple **URL Shortener Web App** built using **Flask (Python), HTML/CSS, and SQLite**.  
 It generates unique short links for long URLs, stores them in a database, and handles redirection seamlessly.
 
-## 🚀 Features
+## Features
 - Shorten long URLs into clean, redirectable links.  
 - Minimal and responsive UI (Bootstrap/HTML/CSS).
 
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Backend:** Python, Flask  
 - **Frontend:** HTML, CSS, Bootstrap  
 - **Database:** SQLite
 
-
-## 📂 Project Structure
-![Project Structure](python_projects/images/project_structure.png)
-
-## ⚙️ Installation
+## Installation
 
 1. Before you begin, ensure you have Python 3.6 or later installed.
 
@@ -45,13 +41,13 @@ flask run
 http://127.0.0.1:5000/
 
 
-## 🎯 Usage
+## Usage
 - Enter a long URL in the input box
 - Get a short URL instantly
 - Visit the short URL to be redirected to the original link
 
 
-## 📸 Screenshots
+## Screenshots
 ![Uploading the long URL](python_projects/images/upload_url.png)
 
 ![Shortened redirectable URL](python_projects/images/short_url.png)
